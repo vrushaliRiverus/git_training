@@ -34,11 +34,10 @@ Fork this repo to your private account
     ```bash
     git rebase -i origin/main
     ```
-    After conflict resolution `git rebase --continue`
-    When rebasing is successful `git push --force-with--lease`
+    - After conflict resolution `git rebase --continue`
+    - When rebasing is successful `git push --force-with-lease`
 ## Commit splitting
 ### Prep
-    ```bash
     git checkout main
     git checkout -b branch_3
     echo "this line should be in first commit" > test.txt
@@ -46,9 +45,7 @@ Fork this repo to your private account
     git add test.txt
     git commit -m "this commit needs to be split"
     git push -u origin branch_3
-    ```
 ### Split
-    ```bash
     git rebase -i origin/main
     # change 'pick' to 'edit' on the commit
     # save and close
@@ -61,4 +58,3 @@ Fork this repo to your private account
     git commit -m "second commit from split"
     git rebase --continue
     git push
-    ```
