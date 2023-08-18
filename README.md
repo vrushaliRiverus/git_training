@@ -19,13 +19,13 @@ Fork this repo to your private account
     git checkout branch_1
     echo "a commit to branch_1" > test.txt
     git add test.txt
-    git commit -m"a commit from branch_1"
+    git commit -m "a commit from branch_1"
     git push -u origin branch_1
 
     git checkout branch_2
     echo "a commit to branch_2" > test.txt
     git add test.txt
-    git commit -m"a commit from branch_2"
+    git commit -m "a commit from branch_2"
     git push -u origin branch_2
     ```
 4. Create a pull request from first branch to main
